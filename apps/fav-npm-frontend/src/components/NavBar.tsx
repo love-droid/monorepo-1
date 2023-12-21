@@ -10,11 +10,11 @@ const NavBar: FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-evenly bg-slate-200 w-4/5 mx-auto">
+    <div className="flex items-center justify-evenly w-4/5 mx-auto">
       <Link
         to={"/"}
         className={`text-2xl ${
-          activeLink === "/" ? "text-blue-500" : "text-gray-500"
+          activeLink === "/" 
         }`}
         onClick={() => handleLinkClick("/")}
       >
@@ -23,7 +23,7 @@ const NavBar: FC = () => {
       <Link
         to={"/Fav"}
         className={`text-2xl ${
-          activeLink === "/Fav" ? "text-blue-500" : "text-gray-500"
+          activeLink === "/Fav" 
         }`}
         onClick={() => handleLinkClick("/Fav")}
       >
